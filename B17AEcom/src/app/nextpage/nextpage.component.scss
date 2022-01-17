@@ -5,7 +5,7 @@
     box-shadow: black;
     margin: 5px 5px;
     padding: 0%;
-    margin-left: 50%;
+    margin-left: 150px;
 
 }
 .similar-card{
@@ -14,17 +14,17 @@
     display:inline-block;
     box-shadow: black;
     margin: 5px 5px;
-    padding: 0%;
-    margin-top: 5%;
+    padding: 0px;
+    margin-top: 5px;
 
 }
 .table{
     position:relative;
-    right: -75%;
+    right: -480px;
 }
 .col-lg-2{
-    margin-left: 1%;
-    padding-left: 7%;
+    margin-left: 1px;
+    padding-left: 120px;
 }
 mat-card span.only-show-on-hover{
     visibility: hidden;
@@ -40,6 +40,7 @@ mat-card span.only-show-on-hover{
     text-align: center;
     margin-left: 10%;
     margin-bottom: 30%;
+    
  
 }
 mat-card:hover span.only-show-on-hover{
@@ -63,7 +64,7 @@ text-align: center;
 }
 
 .col-sm-12{
-    height: 40px !important;
+    height: 40px ;
 }
 .example-header-image{
     width: 100%;
@@ -104,4 +105,8 @@ text-align: center;
     top: 18px !important;
     left: 12px !important;
 
+}
+.cart{
+    margin-top: -20%;
+    margin-left: -30%;
 }

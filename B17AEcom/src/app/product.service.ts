@@ -6,10 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProductService {
-  getAllBooks() {
-    throw new Error('Method not implemented.');
-  }
-
+  
   
   
  

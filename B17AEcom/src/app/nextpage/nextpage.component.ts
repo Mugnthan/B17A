@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -13,13 +14,16 @@ export class NextpageComponent implements OnInit {
   url="https://bookcart.azurewebsites.net/Upload/"
   getbookid: any;
   bookDetail:any;
+  subscription!: Subscription;
   constructor(private listservice:ProductService,private route:ActivatedRoute) { }
 
   ngOnInit(): void {
 this.route.params.subscribe(params=>{
-  debugger;
+  
   this.listservice.productcard()
   .subscribe((data:any) => {
+
+    
     if(data&&data.length){
 this.bookDetail=data.find((it: { bookId: any; })=>it.bookId==params['id'])
     }
@@ -35,6 +39,8 @@ this.bookDetail=data.find((it: { bookId: any; })=>it.bookId==params['id'])
   
   }
 
-  
+  ngOnDestroy() {
+    this.subscription.unsubscribe()
+}
 }
 

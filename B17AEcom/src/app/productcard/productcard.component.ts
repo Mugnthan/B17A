@@ -30,7 +30,7 @@ export class ProductcardComponent implements OnInit {
       
       console.log(this.getbookid)
     });
-
+ 
    
   }
 
