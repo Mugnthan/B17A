@@ -12,7 +12,7 @@ export class NextpageComponent implements OnInit {
 
  
   url="https://bookcart.azurewebsites.net/Upload/"
-  getbookid: any;
+  getbookid:  string | any;
   bookDetail:any;
   subscription!: Subscription;
   constructor(private listservice:ProductService,private route:ActivatedRoute) { }

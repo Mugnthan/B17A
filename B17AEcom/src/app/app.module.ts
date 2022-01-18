@@ -4,8 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// // import { ProductcardComponent } from './productcard/productcard.component';
-// import { ProductlistComponent } from './productlist/productlist.component';
 
 import { ProductcardComponent } from './productcard/productcard.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -19,12 +17,9 @@ import { NextpageComponent } from './nextpage/nextpage.component';
 @NgModule({
   declarations: [
     AppComponent,
-    // ProductcardComponent,
-    // ProductlistComponent,
-    
     ProductcardComponent,
     NextpageComponent,
-    // MatSidenavModule
+  
 
   ],
   imports: [
